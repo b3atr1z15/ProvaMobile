@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A qual país pertence esta bandeira?"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imgBandeira2"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/japao" />
+
+    <RadioGroup
+        android:id="@+id/rgOpcoes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/rb2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coreia do Sul" />
+
+        <RadioButton
+            android:id="@+id/rb2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japão" />
+
+        <RadioButton
+            android:id="@+id/rb2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China" />
+
+        <RadioButton
+            android:id="@+id/rb2_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vietnã" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProximo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo" />
+
+</LinearLayout>

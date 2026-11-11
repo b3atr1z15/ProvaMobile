@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título do aplicativo -->
+    <TextView
+        android:id="@+id/tvTituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz Bandeiras"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo para o nome do participante -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do participante"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Pergunta -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A qual país pertence esta bandeira?"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Bandeira -->
+    <ImageView
+        android:id="@+id/imgBandeira1"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/brasil"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Opções de resposta -->
+    <RadioGroup
+        android:id="@+id/rgOpcoes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rb1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brasil" />
+
+        <RadioButton
+            android:id="@+id/rb1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Argentina" />
+
+        <RadioButton
+            android:id="@+id/rb1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colômbia" />
+
+        <RadioButton
+            android:id="@+id/rb1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chile" />
+    </RadioGroup>
+
+    <!-- Botão Próximo -->
+    <Button
+        android:id="@+id/btnProximo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo" />
+
+</LinearLayout>

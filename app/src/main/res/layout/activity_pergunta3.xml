@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A qual país pertence esta bandeira?"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/imgBandeira3"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/franca"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgOpcoes3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/rb3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Itália" />
+
+        <RadioButton
+            android:id="@+id/rb3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alemanha" />
+
+        <RadioButton
+            android:id="@+id/rb3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="França" />
+
+        <RadioButton
+            android:id="@+id/rb3_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holanda" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProximo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo" />
+
+</LinearLayout>
